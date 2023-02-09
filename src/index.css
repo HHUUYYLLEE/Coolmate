@@ -8,6 +8,41 @@ body {
   overflow-x: hidden;
 }
 
+.hover_button{
+  color: azure;
+
+}
+
+
+.hover_button:hover {
+   color: black;
+   background-color: azure;
+   transition: 0.7s;
+}
+
+.hover_2::after{
+  content: "";
+  top: -20px;
+  left: 520px;
+  position: absolute;
+  display: block;
+  background-color: transparent;
+  width: 110px;
+  height: 30px;
+}
+
+.hover_button_2:hover{
+  color: #0000004a;
+  background-color: #f9f86c;
+}
+
+.banner_color{
+  background: #f9f86c;
+}
+
+.hover_button_2:hover .banner_color{
+  background: #d103c3;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;

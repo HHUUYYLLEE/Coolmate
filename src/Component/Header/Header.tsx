@@ -8,7 +8,7 @@ const Header = (): React.ReactElement<any> => {
   return (
     <>
         <Banner />
-        <div className={"header"} style={{height: 60, width: '100%', borderBottom: "1px solid #e7e7e7", display: "flex", justifyContent: 'space-between', alignItems: "center", padding: "0 30px", position: "relative"}}>
+        <div className={"header hover_button_2"} style={{height: 60, width: '100%', borderBottom: "1px solid #e7e7e7", display: "flex", justifyContent: 'space-between', alignItems: "center", padding: "0 30px", position: "relative"}}>
             <Logo img={"https://www.coolmate.me/images/logo-coolmate.svg"} />
             <Menu />
             <User />
@@ -28,23 +28,25 @@ const Logo= (props: React.PropsWithoutRef<any>): React.ReactComponentElement<any
 }
 
 const Menu= (): React.ReactComponentElement<any>=> {
-    const [open, setOpen]= useState<boolean>(false)
+    const [openProducts, setOpenProducts]= useState<boolean>(false)
     return (
-        <div className={"c-flex-center"} style={{gap: 48}}>
-            <div onClick={()=> setOpen(prev=> !prev)} style={{fontWeight: 600, cursor: "pointer"}}>Sản phẩm</div>
+     <div className={"c-flex-center"} style={{gap: 48}}>
+            <div onMouseEnter={()=> setOpenProducts(true)} style={{fontWeight: 600, cursor: "pointer"}}>Sản phẩm</div>
             <div style={{fontWeight: 600, cursor: "pointer"}}>84RISINGS</div>
             <div style={{fontWeight: 600, cursor: "pointer"}}>CM24</div>
             <div style={{fontWeight: 600, cursor: "pointer"}}>Coolxprint</div>
             <div style={{fontWeight: 600, cursor: "pointer"}}>Blog</div>
             <div style={{fontWeight: 600, cursor: "pointer"}}>Về Coolmate</div>
             {
-                open=== true && <OutsideClickHandler onOutsideClick={() => setOpen(false)}>
-                        <div style={{position: "absolute", top: "100%", width: "100%", left: 0, padding: "10px 50px", background: "#fff", zIndex: 999}}>
+                openProducts=== true && <div onMouseLeave={() => setOpenProducts(false)}
+                        className="hover_2"
+                        style={{position: "absolute", top: "100%", width: "100%", left: 0, padding: "10px 50px", background: "#fff", zIndex: 999}}>
                         <Categories />
                     </div>
-                </OutsideClickHandler>
+                
             }
         </div>
+    
     )
 }
 
