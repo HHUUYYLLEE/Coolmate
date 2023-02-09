@@ -26,14 +26,14 @@ const Home = () => {
   return (
     <div style={{width: "100%"}}>
         <Slider {...settings}>
-            <div style={{flex:"1 1 0"}}>
-                <img alt={""} style={{width: "100%", borderRadius: 10, aspectRatio: 5 / 2}} src={"https://media.coolmate.me/cdn-cgi/image/width=1920,quality=90,format=auto/uploads/February2023/Banner-1.30.jpg"} />
+            <div className='image1' style={{flex:"1 1 0"}}>
+                <img className='image1in' alt={""} style={{width: "100%", borderRadius: 10, height: 642 }} src={"https://media.coolmate.me/cdn-cgi/image/width=1920,quality=90,format=auto/uploads/February2023/Banner-1.30.jpg"} />
             </div>
             <div style={{flex:"1 1 0"}}>
                 <img alt={""} style={{width: "100%", borderRadius: 10}} src={"https://media.coolmate.me/cdn-cgi/image/width=1920,quality=90,format=auto/uploads/February2023/Banner_valentine.jpg"} />
             </div>
             <div style={{flex:"1 1 0"}}>
-                <img alt={""} style={{width: "100%", borderRadius: 10}} src={"https://media.coolmate.me/cdn-cgi/image/width=1920,quality=90,format=auto/uploads/February2023/Banner-Combo.png"} />
+                <img alt={""} style={{width: "100%", borderRadius: 10, height: 642}} src={"https://media.coolmate.me/cdn-cgi/image/width=1920,quality=90,format=auto/uploads/February2023/Banner-Combo.png"} />
             </div>
         </Slider>
         <div style={{position: "relative"}}>

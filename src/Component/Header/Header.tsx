@@ -4,18 +4,38 @@ import OutsideClickHandler from 'react-outside-click-handler';
 import {Link } from "react-router-dom"
 import Banner from './Banner';
 
+
+
 const Header = (): React.ReactElement<any> => {
+    
   return (
     <>
-        <Banner />
-        <div className={"header hover_button_2"} style={{height: 60, width: '100%', borderBottom: "1px solid #e7e7e7", display: "flex", justifyContent: 'space-between', alignItems: "center", padding: "0 30px", position: "relative"}}>
+        <div className='headerout'>
+            <div style={{width: "100%", height: 40}} className={"c-flex-center banner_color"}>
+            <div className='marquee'>Gọi 1900 2727 37 nếu bạn cần hỗ trợ mua hàng giao gấp 
+          <span style={{paddingRight: '100px'}} /> 
+          <span> VALENTINE'S BOX 2 món CHỈ 299K <span style={{paddingRight: '100px'}} />
+          <span>Miễn phí vận chuyển cho đơn từ 200k<span style={{paddingRight: '100px'}} />
+          <span>Gọi 1900 2727 37 nếu bạn cần hỗ trợ mua hàng giao gấp <span style={{paddingRight: '100px'}} /> 
+          <span>VALENTINE'S BOX 2 món CHỈ 299K<span style={{paddingRight: '100px'}} />
+          <span>Miễn phí vận chuyển cho đơn từ 200k<span style={{paddingRight: '100px'}} />
+          <span /></span></span></span></span></span></div>
+        </div>
+        <div className={"header hover_button_2"} 
+        style={{height: 60, width: '100%', borderBottom: "1px solid #e7e7e7", display: "flex", 
+        justifyContent: 'space-between', alignItems: "center", padding: "0 30px", position: "relative"}}>
             <Logo img={"https://www.coolmate.me/images/logo-coolmate.svg"} />
             <Menu />
             <User />
         </div>
+        </div>
+        
     </>
   )
 }
+
+
+
 
 const Logo= (props: React.PropsWithoutRef<any>): React.ReactComponentElement<any> => {
     return (
@@ -31,12 +51,12 @@ const Menu= (): React.ReactComponentElement<any>=> {
     const [openProducts, setOpenProducts]= useState<boolean>(false)
     return (
      <div className={"c-flex-center"} style={{gap: 48}}>
-            <div onMouseEnter={()=> setOpenProducts(true)} style={{fontWeight: 600, cursor: "pointer"}}>Sản phẩm</div>
-            <div style={{fontWeight: 600, cursor: "pointer"}}>84RISINGS</div>
-            <div style={{fontWeight: 600, cursor: "pointer"}}>CM24</div>
-            <div style={{fontWeight: 600, cursor: "pointer"}}>Coolxprint</div>
-            <div style={{fontWeight: 600, cursor: "pointer"}}>Blog</div>
-            <div style={{fontWeight: 600, cursor: "pointer"}}>Về Coolmate</div>
+            <div className='header1' onMouseEnter={()=> setOpenProducts(true)} style={{fontWeight: 600, cursor: "pointer"}}>Sản phẩm</div>
+            <div className='header2' style={{fontWeight: 600, cursor: "pointer"}}>84RISINGS</div>
+            <div className='header3' style={{fontWeight: 600, cursor: "pointer"}}>CM24</div>
+            <div className='header4' style={{fontWeight: 600, cursor: "pointer"}}>Coolxprint</div>
+            <div className='header5' style={{fontWeight: 600, cursor: "pointer"}}>Blog</div>
+            <div className='header6' style={{fontWeight: 600, cursor: "pointer"}}>Về Coolmate</div>
             {
                 openProducts=== true && <div onMouseLeave={() => setOpenProducts(false)}
                         className="hover_2"

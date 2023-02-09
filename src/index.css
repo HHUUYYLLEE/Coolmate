@@ -31,21 +31,88 @@ body {
   height: 30px;
 }
 
-.hover_button_2:hover{
-  color: #0000004a;
-  background-color: #f9f86c;
+/* .banner_color:has(+ .hover_button_2:hover)
+{
+  background: #dfdfdf;
+} */
+
+
+
+.headerout:hover .banner_color{
+  background: #dfdfdf;
+  transition: 0.7s;
+}
+
+.headerout:hover .hover_button_2{
+  background: #f9f86c;
+  transition: 0.7s;
 }
 
 .banner_color{
   background: #f9f86c;
 }
 
-.hover_button_2:hover .banner_color{
-  background: #d103c3;
+.dropdown{
+  display: flex;
+  align-items: center;
+  padding-left: 36rem;
 }
+
+.header1:hover{
+  color:#8e8e8e;
+  transition: 0.3s;
+}
+
+.header2:hover{
+  color:#8e8e8e;
+  transition: 0.3s;
+}
+
+.header3:hover{
+  color:#8e8e8e;
+  transition: 0.3s;
+}
+
+.header4:hover{
+  color:#8e8e8e;
+  transition: 0.3s;
+}
+
+.header5:hover{
+  color:#8e8e8e;
+  transition: 0.3s;
+}
+
+.header6:hover{
+  color:#8e8e8e;
+  transition: 0.3s;
+}
+
+.image1{
+ 
+}
+.image1in{
+  /* mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 5%, rgb(0, 165, 220) 20%, rgba(0, 0, 0, 0.8) 0%); */
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.marquee { 
+  overflow: hidden;
+
+  white-space: nowrap;
+  animation: marquee 50s linear infinite;
+} 
+@keyframes marquee { 
+  0% { 
+    transform: translateX(100%);
+   } 
+  100% { 
+    transform: translateX(-100%);
+   } 
 }
 
 /* the slides */
