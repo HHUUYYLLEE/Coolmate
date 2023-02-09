@@ -4,7 +4,7 @@ import {Link } from "react-router-dom"
 const Categories = () => {
   return (
     <div style={{width: "100%"}}>
-        <div style={{fontWeight: 600, color: "#00000080", marginBottom: 32}}>Danh mục</div>
+        <div style={{fontWeight: 600, color: "#00000080", marginBottom: 32, marginLeft: 30}}>Danh mục</div>
         <div style={{width: "100%", display: "flex", gap: 50}}>
             <div className={""}>
                 <div style={{fontWeight: 600, marginBottom: 16}}>Áo Nam</div>

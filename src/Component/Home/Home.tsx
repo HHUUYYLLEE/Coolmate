@@ -39,7 +39,7 @@ const Home = () => {
         <div style={{position: "relative"}}>
             <div style={{width: "100%", display: "flex", justifyContent: 'space-evenly', alignItems: "center", position: "absolute", top: -120, zIndex: 999}}>
                 <div style={{flex: '1 1 0', padding: 10}}>
-                    <div className={"c-flex-center"} style={{width: '100%', padding: 10, height: 50, borderRadius: 10, border: "1px solid #fff", flexDirection: "column", gap: 5}}>
+                    <div className={"c-flex-center"} style={{cursor: "pointer", width: '100%', padding: 10, height: 50, borderRadius: 10, border: "1px solid #fff", flexDirection: "column", gap: 5}}>
                         <div style={{textAlign: "center", color: "#fff", fontSize: 14, fontWeight: 600}}>
                             Miễn phí vận chuyển cho
                         </div>
@@ -49,7 +49,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div style={{flex: '1 1 0', padding: 10}}>
-                    <div className={"c-flex-center"} style={{width: '100%', padding: 10, height: 50, borderRadius: 10, border: "1px solid #fff", flexDirection: "column", gap: 5}}>
+                    <div className={"c-flex-center"} style={{cursor:"pointer", width: '100%', padding: 10, height: 50, borderRadius: 10, border: "1px solid #fff", flexDirection: "column", gap: 5}}>
                         <div style={{textAlign: "center", color: "#fff", fontSize: 14, fontWeight: 600}}>
                             60 ngày đổi trả
                         </div>
@@ -59,7 +59,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div style={{flex: '1 1 0', padding: 10}}>
-                    <div className={"c-flex-center"} style={{width: '100%', padding: 10, height: 50, borderRadius: 10, border: "1px solid #fff", flexDirection: "column", gap: 5}}>
+                    <div className={"c-flex-center"} style={{cursor:"pointer", width: '100%', padding: 10, height: 50, borderRadius: 10, border: "1px solid #fff", flexDirection: "column", gap: 5}}>
                         <div style={{textAlign: "center", color: "#fff", fontSize: 14, fontWeight: 600}}>
                             Đến tận nơi nhận hàng trả
                         </div>
