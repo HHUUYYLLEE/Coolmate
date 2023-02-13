@@ -1,6 +1,7 @@
 import React from 'react'
 import Slider from "react-slick";
-
+import image from "./Banner-Combo.png"
+import {BsArrowLeft, BsArrowRight} from "react-icons/bs"
 
 const settings = {
     dots: true,
@@ -25,17 +26,43 @@ const settings2 = {
 const Home = () => {
   return (
     <div style={{width: "100%"}}>
-        <Slider {...settings}>
-            <div className='image1' style={{flex:"1 1 0"}}>
-                <img className='image1in' alt={""} style={{width: "100%", borderRadius: 10, height: 642 }} src={"https://media.coolmate.me/cdn-cgi/image/width=1920,quality=90,format=auto/uploads/February2023/Banner-1.30.jpg"} />
-            </div>
+        <div style={{position: 'relative'}}>
+            <Slider {...settings}>
+                <div style={{flex:"1 1 0"}}>
+                     <a href="https://www.coolmate.me/cm24?itm_source=home-banner">
+                        <img alt={""} style={{width: "100%", borderRadius: 10, height: 642, cursor: 'pointer' }} 
+                        src={"https://media.coolmate.me/cdn-cgi/image/width=1920,quality=90,format=auto/uploads/February2023/Banner-1.30.jpg"} />
+                    </a>
+                </div>
             <div style={{flex:"1 1 0"}}>
-                <img alt={""} style={{width: "100%", borderRadius: 10}} src={"https://media.coolmate.me/cdn-cgi/image/width=1920,quality=90,format=auto/uploads/February2023/Banner_valentine.jpg"} />
+                <a href="https://www.coolmate.me/cm24?itm_source=home-banner">
+                    <img alt={""} style={{width: "100%", borderRadius: 10}} src={"https://media.coolmate.me/cdn-cgi/image/width=1920,quality=90,format=auto/uploads/February2023/Banner_valentine.jpg"} />
+                </a>
             </div>
-            <div style={{flex:"1 1 0"}}>
-                <img alt={""} style={{width: "100%", borderRadius: 10, height: 642}} src={"https://media.coolmate.me/cdn-cgi/image/width=1920,quality=90,format=auto/uploads/February2023/Banner-Combo.png"} />
+            <div className='image1in' style={{flex:"1 1 0"}}>
+                <a href="https://www.coolmate.me/cm24?itm_source=home-banner">
+                    <img alt={""} style={{width: "100%", borderRadius: 10, height: 642}} src={image} />
+                </a>
             </div>
-        </Slider>
+           </Slider>
+        </div>
+
+        <div className='buttonLeftBorder' style={{cursor: 'pointer', position: 'absolute', display: 'flex', justifyContent:'center', alignItems: 'center', backgroundColor: 'transparent', height: '40.1rem', width: '9rem', top: '6.3rem'}}>
+            <div className='buttonLeft' style={{borderRadius: '50%', backgroundColor: 'rgba(0, 0, 0, 0.4)', width:'4.5rem', height:'4.5rem', display: 'flex', justifyContent:'center', alignItems: 'center' }}>
+            <div style={{borderRadius: '50%', backgroundColor: 'rgba(255, 255, 255, 0.4)', width:'3.1rem', height:'3.1rem', display: 'flex', justifyContent:'center', alignItems: 'center' }}>
+                <BsArrowLeft style={{width: '1.7rem', height: '1.7rem'}}/>
+            </div>
+            </div>
+        </div>
+
+        <div className='buttonRightBorder' style={{cursor: 'pointer', position: 'absolute', display: 'flex', justifyContent:'center', alignItems: 'center', backgroundColor: 'transparent', height: '40.1rem', width: '9rem', top: '6.3rem', left:'97rem'}}>
+            <div className='buttonRight' style={{borderRadius: '50%', backgroundColor: 'red', width:'4.5rem', height:'4.5rem', display: 'flex', justifyContent:'center', alignItems: 'center' }}>
+            <div style={{borderRadius: '50%', backgroundColor: 'green', width:'3.1rem', height:'3.1rem', display: 'flex', justifyContent:'center', alignItems: 'center' }}>
+                <BsArrowRight style={{width: '1.7rem', height: '1.7rem'}}/>
+            </div>
+            </div>
+        </div>
+
         <div style={{position: "relative"}}>
             <div style={{width: "100%", display: "flex", justifyContent: 'space-evenly', alignItems: "center", position: "absolute", top: -120, zIndex: 999}}>
                 <div style={{flex: '1 1 0', padding: 10}}>
