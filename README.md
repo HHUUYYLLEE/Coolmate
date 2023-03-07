@@ -1,8 +1,6 @@
 # config.js
 
-Modify this in config to work on mobile: 
-
-## 'export const API_URL= "http:///*your server IP*/:4000"'
+Modify in config.js to work on mobile
 
 
 # Getting Started with Create React App
