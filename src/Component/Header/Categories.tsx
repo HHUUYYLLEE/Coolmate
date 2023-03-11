@@ -2,7 +2,7 @@ import {Link } from "react-router-dom"
 
 const Categories = (props: any) => {
   return (
-    <div style={{width: "100%", display:'flex', paddingBottom:'3.5rem'}}>
+    <div className="dropDownMobile" style={{width: "100%", display:'flex', paddingBottom:'3.5rem'}}>
 
         <div style={{display: 'block', paddingLeft:'6rem'}}>
             <div className="dropdownTopPart" style={{fontWeight: 600, color: "#00000080", marginBottom: 32}}>Nhu cầu</div>

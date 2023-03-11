@@ -84,7 +84,7 @@ const Menu= (): React.ReactComponentElement<any>=> {
                     Về Coolmate
             </div>
             
-            <div onMouseEnter={() => setOpenProducts2(true)} onMouseLeave={() => setOpenProducts2(false)}
+            <div className="dropDownHeader" onMouseEnter={() => setOpenProducts2(true)} onMouseLeave={() => setOpenProducts2(false)}
                 style={ openProducts1=== true || openProducts2===true ? 
                 {position: "absolute", top: "100%", width: "100%", left: 0, padding: "10px 50px", background: "#fff", zIndex: 999} 
                 : {display:'none'} }>
@@ -149,11 +149,11 @@ const User= (): React.ReactComponentElement<any>=> {
                             navigate("/search?query="+ searchQuery)
                             setSearchQuery("")
                         }
-                    }} src="https://www.coolmate.me/images/header/icon-search.svg" alt="" style={{width: 18, height: 23, cursor: "pointer", position: "absolute", right: 0, top: "50%", transform: "translate(-50%, -50%)"}} />
+                    }} src="https://www.coolmate.me/images/header/icon-search-new.svg" alt="" style={{width: 18, height: 23, cursor: "pointer", position: "absolute", right: 0, top: "50%", transform: "translate(-50%, -50%)"}} />
                 </div>
             </OutsideClickHandler>
             <div onClick={()=> setLogin(()=> true)} className={"c-flex-center"} >
-                <img src="https://www.coolmate.me/images/header/icon-account.svg" alt="" style={{width: 18, height: 23, cursor: "pointer"}} />
+                <img src="https://www.coolmate.me/images/header/icon-account-new.svg" alt="" style={{width: 18, height: 23, cursor: "pointer"}} />
             </div>
             {auth=== true && <Link to={"/history"}>
                 <div className={"c-flex-center"} >
@@ -162,7 +162,7 @@ const User= (): React.ReactComponentElement<any>=> {
             </Link>}
             <Link to={"/cart"}>
                 <div className={"c-flex-center"} >
-                    <img src="https://www.coolmate.me/images/header/icon-cart.svg" alt="" style={{width: 18, height: 23, cursor: "pointer"}} />
+                    <img src="https://www.coolmate.me/images/header/icon-cart-new.svg" alt="" style={{width: 18, height: 23, cursor: "pointer"}} />
                 </div>
             </Link>
             {login=== true && auth=== false && <Login setLogin={setLogin} />}

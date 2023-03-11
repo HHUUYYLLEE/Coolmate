@@ -177,6 +177,22 @@ code {
   .m-1-1 {
     justify-content: flex-start !important;
   }
+  .dropDownHeader{
+    /* flex-direction: column !important;
+    height: auto !important;
+    padding: 10px !important;
+    gap: 20px; */
+    overflow: auto;
+  }
+  /* .dropDownMobile > div{
+    white-space: nowrap;
+    padding: 10px;
+    width: 100% !important;
+  }
+  .dropDownMobile{
+    justify-content: flex-start !important;
+    
+  } */
   .n-1-1 {
     display: none;
   }
